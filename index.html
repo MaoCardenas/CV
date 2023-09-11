@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Hoja de Vida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f0f0;
+            padding: 10px 0;
+        }
+        .tab {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #ccc;
+        }
+        .tab:hover {
+            background-color: #333333;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Andres Mauricio Cardenas Arevalo</h1>
+            <p>Finanzas y Comercio Exterior</p>
+        </header>
+
+        <!-- Pestañas -->
+        <div class="tabs">
+            <div class="tab" onclick="openTab('es')">Español</div>
+            <div class="tab" onclick="openTab('en')">English</div>
+        </div>
+
+        <!-- Contenido de las pestañas -->
+        <div id="es" class="content active">
+            <section>
+                <h2>Objetivo Profesional</h2>
+                <p>Poner al servicio mi proactividad, organización y experiencia, con el fin de apoyar e impulsar personas, procesos y productos, Aprender nuevos procesos de control y gestión en ambientes activos que permitan cumplir con altos estándares. Motivado, apto para el trabajo en equipo y con fuertes habilidades organizativas e interpersonales.</p>
+            </section>
+
+            <section>
+                <h2>Experiencia Laboral</h2>
+                <p><strong>Kanguro Service SAS</strong> - Analista Financiero - Febrero 2023 / Actualidad</p>
+                <p>Desarrollo del área financiera, parametrización de procesos y organización de la información. Creación de planes financieros basados en análisis de datos y maximización del capital de trabajo.</p>
+                <p><strong>Kanguro Service SAS</strong> - Director de Operaciones - Mayo 2021 / Enero 2023</p>
+                <p>Creación de procesos para el control de operadores logísticos aliados, control diario y resolución de problemas, manejo constante de clientes, análisis de resultados en tiempos y movimientos, capacidad de negociación con proveedores.</p>
+            </section>
+
+            <section>
+                <h2>Educación</h2>
+                <p><strong>Fundación Universitaria de la Cámara de Comercio de Bogotá</strong> - Profesional en Finanzas y Comercio Exterior - 2013</p>
+                <p>Mejor calificación en el análisis técnico y fundamental de la acción de Davivienda 2012-2013.</p>
+            </section>
+
+            <section>
+                <h2>Habilidades Personales</h2>
+                <ul>
+                    <li>Proactividad</li>
+                    <li>Enfoque en el aprendizaje constante</li>
+                    <li>Atención a los detalles</li>
+                    <li>Análisis racional</li>
+                    <!-- Agrega más habilidades según sea necesario -->
+                </ul>
+            </section>
+
+            <section>
+                <h2>Habilidades Sistematicas</h2>
+                <ul>
+                    <li>Excel avanzado</li>
+                    <li>Power BI</li>
+                    <li>Helisa</li>
+                    <li>SQL Postgres / SQL Server (Básico)</li>
+                    <!-- Agrega más habilidades según sea necesario -->
+                </ul>
+            </section>
+
+            <section>
+                <h2>Idiomas</h2>
+                <ul>
+                    <li>Inglés - Nivel B1/B2</li>
+                    <!-- Agrega más idiomas según sea necesario -->
+                </ul>
+            </section>
+
+            <section>
+                <h2>Contacto</h2>
+                <p>Correo Electrónico: andres.cardenas2429@gmail.com</p>
+                <p>Teléfono: (322) 360-0457</p>
+                <p>Ciudad: Bogotá</p>
+                <p>País: Colombia</p>
+            </section>
+
+            <!-- Más contenido en español -->
+        </div>
+
+        <div id="en" class="content">
+            <section>
+                <h2>Professional Objective</h2>
+                <p>To Put all my productivity, organized work and experience to help and drive people, processes, and products forward.
+                   Learn about new control processes and management systems within active work environments which can allow me to accomplish with high standards. 
+                   Motivated, capable of working in a team, organized, with strong methodological and interpersonal skills</p>
+            </section>
+
+            <section>
+                <h2>Work Experience</h2>
+                <p><strong>Kanguro Service SAS</strong> - Financial Analyst - February 2023 / Currently</p>
+                <p>Development of the financial area, parameterization of processes and organization of information. Creation of financial plans based on data analysis and maximization of working capital.</p>
+                <p><strong>Kanguro Service SAS</strong> - Operation Manager - May 2021 / January 2023</p>
+                <p>Development of processes for overseeing allied logistics partners, daily monitoring and issue resolution, ongoing customer relations management, analysis of time and movement results, and adeptness in negotiating with suppliers.</p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <p><strong>University Foundation of the Bogota Chamber of Commerce.</strong> - Bachelor's in Finance and International Business. - 2013</p>
+                <p>Highest score in the technical and fundamental analysis of Davivienda bank stock. 2012-2013.</p>
+            </section>
+
+            <section>
+                <h2>Personal Skills</h2>
+                <ul>
+                    <li>Proactivity</li>
+                    <li>Focus on constant learning</li>
+                    <li>Attention to details</li>
+                    <li>Rational analysis</li>
+                    <!-- Agrega más habilidades según sea necesario -->
+                </ul>
+            </section>
+
+            <section>
+                <h2>Systematic Skills</h2>
+                <ul>
+                    <li>Excel (Advanced)</li>
+                    <li>Power BI</li>
+                    <li>Helisa</li>
+                    <li>SQL Postgres / SQL Server (Basic)</li>
+                    <!-- Agrega más habilidades según sea necesario -->
+                </ul>
+            </section>
+
+            <section>
+                <h2>Languages</h2>
+                <ul>
+                    <li>English - Level B1/B2</li>
+                    <!-- Agrega más idiomas según sea necesario -->
+                </ul>
+            </section>
+
+            <section>
+                <h2>Contact</h2>
+                <p>E-mail: andres.cardenas2429@gmail.com</p>
+                <p>Phone: (322) 360-0457</p>
+                <p>City: Bogota</p>
+                <p>Country: Colombia</p>
+                <!-- More content in English -->
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i, content, tab;
+
+            // Oculta todos los contenidos y resalta la pestaña seleccionada
+            content = document.getElementsByClassName("content");
+            for (i = 0; i < content.length; i++) {
+                content[i].style.display = "none";
+            }
+
+            tab = document.getElementsByClassName("tab");
+            for (i = 0; i < tab.length; i++) {
+                tab[i].style.backgroundColor = "#ccc";
+            }
+
+            // Muestra el contenido de la pestaña seleccionada
+            document.getElementById(tabName).style.display = "block";
+
+            // Resalta la pestaña activa
+            document.getElementById(tabName.toLowerCase()).style.backgroundColor = "#f0f0f0";
+        }
+
+        // Abre la pestaña en español por defecto al cargar la página
+        openTab('es');
+    </script>
+</body>
+</html>
