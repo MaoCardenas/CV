@@ -2,38 +2,63 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Mi Hoja de Vida</title>
+    <title>Andres Cardenas Hoja de Vida</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #c4c4c4;
+            margin: 0;
+            padding: 0;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
-            color: #333;
+            color: #000;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
         }
         .tabs {
             display: flex;
             justify-content: space-around;
-            background-color: #f0f0f0;
+            background-color: #000;
             padding: 10px 0;
         }
         .tab {
             cursor: pointer;
             padding: 10px 20px;
             background-color: #ccc;
+            border-radius: 5px;
         }
         .tab:hover {
-            background-color: #333333;
+            background-color: #ddd;
         }
         .content {
             display: none;
+            padding: 20px 0;
         }
         .content.active {
             display: block;
+        }
+        h2 {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        p, li {
+            background-color: #e4e4e4;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        li {
+            list-style-type: square;
         }
     </style>
 </head>
@@ -41,7 +66,7 @@
     <div class="container">
         <header>
             <h1>Andres Mauricio Cardenas Arevalo</h1>
-            <p>Finanzas y Comercio Exterior</p>
+            <p id="career">Finanzas y Comercio Exterior</p>
         </header>
 
         <!-- Pestañas -->
@@ -54,7 +79,7 @@
         <div id="es" class="content active">
             <section>
                 <h2>Objetivo Profesional</h2>
-                <p>Poner al servicio mi proactividad, organización y experiencia, con el fin de apoyar e impulsar personas, procesos y productos, Aprender nuevos procesos de control y gestión en ambientes activos que permitan cumplir con altos estándares. Motivado, apto para el trabajo en equipo y con fuertes habilidades organizativas e interpersonales.</p>
+                <p>Poner al servicio mi proactividad, organización y experiencia, con el fin de apoyar e impulsar personas, procesos y productos. Aprender nuevos procesos de control y gestión en ambientes activos que permitan cumplir con altos estándares. Motivado, apto para el trabajo en equipo y con fuertes habilidades organizativas e interpersonales.</p>
             </section>
 
             <section>
@@ -63,11 +88,19 @@
                 <p>Desarrollo del área financiera, parametrización de procesos y organización de la información. Creación de planes financieros basados en análisis de datos y maximización del capital de trabajo.</p>
                 <p><strong>Kanguro Service SAS</strong> - Director de Operaciones - Mayo 2021 / Enero 2023</p>
                 <p>Creación de procesos para el control de operadores logísticos aliados, control diario y resolución de problemas, manejo constante de clientes, análisis de resultados en tiempos y movimientos, capacidad de negociación con proveedores.</p>
+                <p><strong>Transborder SAS</strong> - Ejecutivo Comercial - Febrero 2016 / Febrero 2017</p>
+                <ul>
+                    <li>Desarrollo de estrategias de adquisición de clientes.</li>
+                    <li>Análisis de mercado.</li>
+                    <li>Retención de cuentas.</li>
+                    <li>Soporte postventa.</li>
+                </ul>
             </section>
 
             <section>
                 <h2>Educación</h2>
                 <p><strong>Fundación Universitaria de la Cámara de Comercio de Bogotá</strong> - Profesional en Finanzas y Comercio Exterior - 2013</p>
+                <p style="font-style: italic">*Logros Académicos*</p>
                 <p>Mejor calificación en el análisis técnico y fundamental de la acción de Davivienda 2012-2013.</p>
             </section>
 
@@ -83,12 +116,14 @@
             </section>
 
             <section>
-                <h2>Habilidades Sistematicas</h2>
+                <h2>Habilidades Técnicas</h2>
                 <ul>
-                    <li>Excel avanzado</li>
-                    <li>Power BI</li>
-                    <li>Helisa</li>
-                    <li>SQL Postgres / SQL Server (Básico)</li>
+                    <li>Excel (Intermedio)</li>
+                    <li>Power Point (Intermedio)</li>
+                    <li>Power BI (Intermedio)</li>
+                    <li>Helisa (Intermedio)</li>
+                    <li>SQL Postgres / SQL Server (Basico)</li>
+                    <li>VSCODE (Basico)</li>
                     <!-- Agrega más habilidades según sea necesario -->
                 </ul>
             </section>
@@ -107,6 +142,13 @@
                 <p>Teléfono: (322) 360-0457</p>
                 <p>Ciudad: Bogotá</p>
                 <p>País: Colombia</p>
+        <!-- Enlaces a redes sociales -->
+                <p>Redes Sociales:</p>
+                <ul>
+                <li><a href="https://www.facebook.com/mao.cardenas.5" target="_blank">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">LinkedIn</a></li>
+        <!-- Agrega más enlaces según tus redes sociales -->
+                </ul>
             </section>
 
             <!-- Más contenido en español -->
@@ -115,22 +157,31 @@
         <div id="en" class="content">
             <section>
                 <h2>Professional Objective</h2>
-                <p>To Put all my productivity, organized work and experience to help and drive people, processes, and products forward.
-                   Learn about new control processes and management systems within active work environments which can allow me to accomplish with high standards. 
-                   Motivated, capable of working in a team, organized, with strong methodological and interpersonal skills</p>
+                <p>To put all my productivity, organized work, and experience to help and drive people, processes, and products forward.
+                   Learn about new control processes and management systems within active work environments that can allow me to accomplish high standards. 
+                   Motivated, capable of working in a team, organized, with strong methodological and interpersonal skills.</p>
             </section>
 
             <section>
                 <h2>Work Experience</h2>
                 <p><strong>Kanguro Service SAS</strong> - Financial Analyst - February 2023 / Currently</p>
-                <p>Development of the financial area, parameterization of processes and organization of information. Creation of financial plans based on data analysis and maximization of working capital.</p>
+                <p>Development of the financial area, parameterization of processes, and organization of information. Creation of financial plans based on data analysis and maximization of working capital.</p>
                 <p><strong>Kanguro Service SAS</strong> - Operation Manager - May 2021 / January 2023</p>
-                <p>Development of processes for overseeing allied logistics partners, daily monitoring and issue resolution, ongoing customer relations management, analysis of time and movement results, and adeptness in negotiating with suppliers.</p>
+                <p>Development of processes for overseeing allied logistics partners, daily monitoring and issue resolution, ongoing customer relations management, analysis of time and movement results, and adaptness in negotiating with suppliers.</p>
+                <p><strong>Transborder SAS</strong> - Business Executive - February 2016 / February 2017</p>
+                <ul>
+                    <li>Development of customer acquisition strategies.</li>
+                    <li>Market analysis.</li>
+                    <li>Account retention.</li>
+                    <li>Post-sale support.</li>
+                    <!-- Agrega más habilidades según sea necesario -->
+                </ul>
             </section>
 
             <section>
                 <h2>Education</h2>
                 <p><strong>University Foundation of the Bogota Chamber of Commerce.</strong> - Bachelor's in Finance and International Business. - 2013</p>
+                <p style="font-style: italic">*Academic Achievements*</p>
                 <p>Highest score in the technical and fundamental analysis of Davivienda bank stock. 2012-2013.</p>
             </section>
 
@@ -146,12 +197,14 @@
             </section>
 
             <section>
-                <h2>Systematic Skills</h2>
+                <h2>Technical Skills</h2>
                 <ul>
-                    <li>Excel (Advanced)</li>
-                    <li>Power BI</li>
-                    <li>Helisa</li>
+                    <li>Excel (Intermediate)</li>
+                    <li>Power Point (Intermediate)</li>
+                    <li>Power BI (Intermediate)</li>
+                    <li>Helisa (Intermediate)</li>
                     <li>SQL Postgres / SQL Server (Basic)</li>
+                    <li>VSCODE (Basic)</li>
                     <!-- Agrega más habilidades según sea necesario -->
                 </ul>
             </section>
@@ -171,6 +224,13 @@
                 <p>City: Bogota</p>
                 <p>Country: Colombia</p>
                 <!-- More content in English -->
+                <!-- Enlaces a redes sociales -->
+                <p>Social Media:</p>
+                <ul>
+                <li><a href="https://www.facebook.com/mao.cardenas.5" target="_blank">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">LinkedIn</a></li>
+         <!-- Agrega más enlaces según tus redes sociales -->
+                 </ul>
             </section>
         </div>
     </div>
@@ -178,25 +238,32 @@
     <script>
         function openTab(tabName) {
             var i, content, tab;
-
+    
             // Oculta todos los contenidos y resalta la pestaña seleccionada
             content = document.getElementsByClassName("content");
             for (i = 0; i < content.length; i++) {
                 content[i].style.display = "none";
             }
-
+    
             tab = document.getElementsByClassName("tab");
             for (i = 0; i < tab.length; i++) {
                 tab[i].style.backgroundColor = "#ccc";
             }
-
+    
             // Muestra el contenido de la pestaña seleccionada
             document.getElementById(tabName).style.display = "block";
-
+    
             // Resalta la pestaña activa
             document.getElementById(tabName.toLowerCase()).style.backgroundColor = "#f0f0f0";
+    
+            // Cambia el contenido del párrafo "career" si se selecciona la pestaña "en"
+            if (tabName === 'en') {
+                document.getElementById('career').textContent = 'Finance and International Business';
+            } else {
+                document.getElementById('career').textContent = 'Finanzas y Comercio Exterior';
+            }
         }
-
+    
         // Abre la pestaña en español por defecto al cargar la página
         openTab('es');
     </script>
